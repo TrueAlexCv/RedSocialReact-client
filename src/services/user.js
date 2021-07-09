@@ -14,8 +14,7 @@ export function register(user) {
 
 export function login(user) {
     return axios.post(api + 'login',
-        user
-        ,
+        user,
         {
             headers: {
                 'Content-Type': 'application/json'

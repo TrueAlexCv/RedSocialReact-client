@@ -12,6 +12,7 @@ import Login from './components/login/login';
 import Register from './components/register/register';
 import Timeline from './components/timeline/timeline';
 import Users from './components/users/users';
+import Profile from './components/profile/profile';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route exact path='/register' component={Register} />
         <Route exact path='/timeline' component={Timeline} isPrivate />
         <Route exact path='/users' component={Users} isPrivate />
+        <Route exact path='/profile' component={Profile} isPrivate />
       </Switch>
     </Router>
   </React.StrictMode>,
